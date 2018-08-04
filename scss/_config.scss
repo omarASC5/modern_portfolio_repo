@@ -32,3 +32,41 @@ $background-opacity: 0.9;
     }
   }
 }
+
+//Set Text Color
+@function set-text-color($color) {
+  @if (lightness($color) > 40) {
+    @return #000000;
+  } @else {
+    @return #ffffff;
+  }
+}
+
+//Media Query Mixins
+
+@mixin mediaSm {
+  //CSS only applies at 500px or less
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+@mixin mediaMd {
+  //CSS only applies at 768px or less
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mediaLg {
+  //CSS only applies between 768px and 1170px
+  @media screen and (min-width: 768px) and (max-width: 1170px) {
+    @content;
+  }
+}
+
+@mixin mediaXl {
+  //CSS only applies at 1171px or above
+  @media screen and (max-width: 1171px) {
+    @content;
+  }
+}
