@@ -138,7 +138,7 @@ header {
 
 main {
   padding: 4rem;
-  min-height: calc(100vh - 60px); }
+  min-height: calc( 100vh - 60px); }
   main .icons {
     margin-top: 1rem; }
     main .icons a {
@@ -154,7 +154,7 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
+  grid-template-areas: "bioimage bio bio" "job1 job2 job3";
   grid-template-columns: 1fr 1fr 1fr; }
 
 .bio-image {
@@ -188,6 +188,64 @@ main {
   color: #ffffff;
   height: 60px; }
 
+.projects {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-size: 1rem; }
+  .projects img {
+    width: 100%;
+    border: solid 3px #ffffff; }
+    .projects img:hover {
+      opacity: 0.5;
+      border-color: #eec11a;
+      transition: all 0.5s ease-out; }
+
+.btn, .btn-dark, .btn-light {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem;
+  transition: all 0.5s ease-out; }
+  .btn:hover, .btn-dark:hover, .btn-light:hover {
+    background: #eec11a;
+    color: #ffffff; }
+
+.btn-dark {
+  background: black;
+  color: #ffffff; }
+
+.btn-light {
+  background: #c4c4c4;
+  color: #ffffff; }
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem; }
+  .boxes div {
+    font-size: 2rem;
+    border: 3px solid #ffffff;
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 3rem;
+    transition: all 0.5s ease-out; }
+    .boxes div:hover {
+      padding: 0.5rem 1.5rem;
+      background: #eec11a;
+      color: #000000; }
+      .boxes div:hover span {
+        color: #ffffff; }
+
+@media screen and (max-width: 1171px) {
+  .projects {
+    grid-template-columns: 1fr 1fr 1fr 1fr; } }
+
+@media screen and (min-width: 768px) and (max-width: 1170px) {
+  .projects {
+    grid-template-columns: 1fr 1fr 1fr; } }
+
 @media screen and (max-width: 768px) {
   main {
     align-items: center;
@@ -216,8 +274,12 @@ main {
       height: 150px; }
   .about-info {
     grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  .projects {
+    grid-template-columns: 1fr 1fr; } }
 
 @media screen and (max-width: 768px) {
   main#home h1 {
-    margin-top: 10vh; } }
+    margin-top: 10vh; }
+  .projects {
+    grid-template-columns: 1fr; } }
