@@ -13,5 +13,12 @@
   "dependencies": {
     "gh-pages": "^1.2.0",
     "node-sass": "^4.9.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/omarASC5/modern_portfolio_repo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/omarASC5/modern_portfolio_repo/issues"
   }
 }
