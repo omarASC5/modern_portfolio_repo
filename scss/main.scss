@@ -79,7 +79,10 @@ main {
     "job1 job2 job3";
   grid-template-columns: 1fr 1fr 1fr;
 }
-
+.tech-experience-links {
+  color: orange;
+  text-decoration: underline;
+}
 .bio-image {
   grid-area: bioimage;
   margin: auto;

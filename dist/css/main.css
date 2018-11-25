@@ -138,7 +138,7 @@ header {
 
 main {
   padding: 4rem;
-  min-height: calc( 100vh - 60px); }
+  min-height: calc( 100vh - 60px); }
   main .icons {
     margin-top: 1rem; }
     main .icons a {
@@ -154,8 +154,12 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: "bioimage bio bio" "job1 job2 job3";
+  grid-template-areas: "bioimage bio bio" "job1 job2 job3";
   grid-template-columns: 1fr 1fr 1fr; }
+
+.tech-experience-links {
+  color: orange;
+  text-decoration: underline; }
 
 .bio-image {
   grid-area: bioimage;
@@ -273,7 +277,7 @@ main {
       width: 150px;
       height: 150px; }
   .about-info {
-    grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
+    grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
     grid-template-columns: 1fr; }
   .projects {
     grid-template-columns: 1fr 1fr; } }
