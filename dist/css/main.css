@@ -1,7 +1,6 @@
 * {
   box-sizing: border-box; }
 
-  
 .menu-btn {
   position: absolute;
   z-index: 3;
@@ -196,7 +195,7 @@ main {
 .projects {
   display: grid;
   grid-gap: 1rem;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   font-size: 1rem; }
   .projects img {
     width: 100%;
